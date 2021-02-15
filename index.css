@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
+.fixed-nav-container {
+  padding: 1rem 1.875rem 0;
+  padding-top: 0;
+}
+
+.hero__container {
+  padding: 0.9375rem;
+}
+
+.container {
+  padding: 0.9375rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 17.6px;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  color: white;
+  background: #1f1f1f;
+}
+
+.header .main__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5.25rem;
+}
+
+@media (min-width: 992px) {
+  .header .main__nav {
+    height: 3.6363636363636362em;
+  }
+}
+
+.header .nav-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.header .nav__item--burger {
+  font-size: 2.2em;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .header .nav__item--burger {
+    display: none;
+  }
+}
+
+.header li {
+  list-style: none;
+}
+
+.header__logo {
+  height: 54px;
+}
+
+@media (min-width: 992px) {
+  .header__logo {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+}
+
+.header .hero-desktop-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.header .hero__container--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row no-wrap;
+          flex-flow: row no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.header .hero__container--content .content__wrapper {
+  margin-left: 8.88%;
+}
+
+.header .hero__container--content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.header .hero__container--content .hero__paragraph {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+@media (min-width: 576px) {
+  .header .hero__container--content .hero__paragraph {
+    width: 80%;
+  }
+}
+
+.header .hero__container--content .hero__paragraph--last {
+  margin-bottom: 3rem;
+}
+
+.header .hero__container--content .hero__button {
+  cursor: pointer;
+  background-color: #ff060a;
+  border: none;
+  border-radius: 2rem;
+  width: 12rem;
+  height: 2.875rem;
+}
+
+.header .hero__container--content .hero__button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.header .hero__container--content .hero__button a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .hero__container--content .hero__button:focus {
+  outline: none;
+  -webkit-box-shadow: 20px solid white;
+          box-shadow: 20px solid white;
+}
+
+.header .hero__container--image {
+  height: 528px;
+  background: url(/assets/hero-img.jpg) no-repeat center;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .header .nav-inner {
+    max-width: 83%;
+    margin: 0 auto;
+    padding-top: 2.2727272727272725em;
+  }
+  .header .hero-desktop-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .header .hero__container--content,
+  .header .hero__container--image {
+    height: calc(100vh - 3.6363636363636362em);
+  }
+  .header .hero__container--content .content__wrapper {
+    margin-left: calc(8.88% + 4.1477272727272725em);
+  }
+  .header .hero__container--image {
+    border-top: 1px solid rgba(255, 6, 10, 0.25);
+    border-left: 1px solid rgba(255, 6, 10, 0.25);
+  }
+}
+/*# sourceMappingURL=index.css.map */
