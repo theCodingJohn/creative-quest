@@ -228,7 +228,7 @@ body {
 
 .header .hero__container--image {
   height: 528px;
-  background: url(/assets/hero-img.jpg) no-repeat center;
+  background: url(./assets/hero-img.jpg) no-repeat center;
   background-size: cover;
 }
 
