@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     height: 5.25rem;
-    @media (min-width: 992px) {
+    @media (min-width: $l) {
       height: 3.6363636363636362rem;
     }
   }
@@ -18,7 +18,7 @@
 
   .nav__links--desktop {
     display: none;
-    @media (min-width: 992px) {
+    @media (min-width: $l) {
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -46,7 +46,7 @@
   .nav__item--burger {
     font-size: 2.2em;
     cursor: pointer;
-    @media (min-width: 992px) {
+    @media (min-width: $l) {
       display: none;
     }
   }
@@ -62,7 +62,7 @@
 
   &__logo {
     height: 54px;
-    @media (min-width: 992px) {
+    @media (min-width: $l) {
       transform: translateY(1rem);
     }
   }
@@ -91,7 +91,7 @@
     .hero__paragraph {
       margin-bottom: 1rem;
       line-height: 1.7;
-      @media (min-width: 576px) {
+      @media (min-width: $s) {
         width: 80%;
       }
     }
@@ -106,6 +106,12 @@
       border: none;
       border-radius: 2rem;
       font-size: 13.92px;
+      @media (min-width: $xl) {
+        font-size: 16.92px;
+      }
+      @media (min-width: $xl) {
+        font-size: 20px;
+      }
       width: 13.793103448275863em;
       height: 3.3045977011494254em;
 
@@ -133,7 +139,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: $l) {
   .header {
     .nav-inner {
       max-width: 83%;

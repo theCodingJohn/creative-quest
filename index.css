@@ -26,6 +26,18 @@ html {
   }
 }
 
+@media (min-width: 1540px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -204,6 +216,18 @@ body {
   font-size: 13.92px;
   width: 13.793103448275863em;
   height: 3.3045977011494254em;
+}
+
+@media (min-width: 1540px) {
+  .header .hero__container--content .hero__button {
+    font-size: 16.92px;
+  }
+}
+
+@media (min-width: 1540px) {
+  .header .hero__container--content .hero__button {
+    font-size: 20px;
+  }
 }
 
 .header .hero__container--content .hero__button:hover {
