@@ -54,7 +54,7 @@ body {
 
 @media (min-width: 992px) {
   .header .main__nav {
-    height: 3.6363636363636362em;
+    height: 3.6363636363636362rem;
   }
 }
 
@@ -75,6 +75,49 @@ body {
   width: 100%;
 }
 
+.header .nav__links--desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .header .nav__links--desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+.header .nav__links--desktop .nav-links-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (9.1rem)[4];
+      grid-template-columns: repeat(4, 9.1rem);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  justify-items: center;
+  grid-column-gap: 0.7rem;
+  margin: 0;
+  margin-bottom: 0.3em;
+  width: 95%;
+  border-bottom: 1px solid #ff060a;
+}
+
+.header .nav__links--desktop .nav-links-wrapper li {
+  font-size: 0.91rem;
+  padding-bottom: 0.45em;
+  -ms-flex-item-align: bottom;
+      -ms-grid-row-align: bottom;
+      align-self: bottom;
+}
+
 .header .nav__item--burger {
   font-size: 2.2em;
   cursor: pointer;
@@ -84,6 +127,11 @@ body {
   .header .nav__item--burger {
     display: none;
   }
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .header li {
@@ -153,8 +201,9 @@ body {
   background-color: #ff060a;
   border: none;
   border-radius: 2rem;
-  width: 12rem;
-  height: 2.875rem;
+  font-size: 13.92px;
+  width: 13.793103448275863em;
+  height: 3.3045977011494254em;
 }
 
 .header .hero__container--content .hero__button:hover {
