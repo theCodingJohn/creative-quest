@@ -1,0 +1,76 @@
+.whatWeDo {
+  padding: 5rem 1.6rem;
+  @media (min-width: $l) {
+    padding-right: 4.5rem;
+  }
+
+  .row {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    @media (min-width: $l) {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1.5rem;
+    }
+  }
+
+  .col {
+    @include flex();
+  }
+
+  img {
+    width: 100%;
+    max-width: 25rem;
+    @media (min-width: $l) {
+      max-width: 30.23rem;
+      // max-width: none;
+    }
+  }
+
+  .col1 {
+    @media (min-width: $l) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+
+  .col2 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 570px;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    font-size: 1.1rem;
+
+    h1 {
+      margin-bottom: 1rem;
+
+      ~ p {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+      }
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      margin-bottom: 20px;
+      font-weight: 600;
+
+      span {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.04);
+        border-radius: 0.4rem;
+        margin-right: 1rem;
+      }
+    }
+
+    svg {
+      font-size: 1.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
